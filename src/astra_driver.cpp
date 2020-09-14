@@ -411,7 +411,8 @@ void AstraDriver::configCb(Config &config, uint32_t level)
 
   use_device_time_ = config.use_device_time;
 
-  data_skip_ = config.data_skip+1;
+  //  data_skip_ = config.data_skip+1;
+  data_skip_ = 3;
 
   applyConfigToOpenNIDevice();
 
